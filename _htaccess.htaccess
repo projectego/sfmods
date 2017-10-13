@@ -1,0 +1,19 @@
+Options -Indexes
+
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?sfmods.com [NC]
+RewriteRule \.(jpg|jpeg|png|gif|bmp)$ - [NC,F,L]
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !^sfmods.com$ [NC]
+RewriteRule ^(.*)$ http://sfmods.com/$1 [L,R=301]
+
+Redirect /index /
+
+RewriteCond %{THE_REQUEST} ^.*/index\.php
+RewriteRule ^(.*)index.php$ /$1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^.*/force\.php
+RewriteRule ^(.*)force.php$ /$1 [R=301,L]

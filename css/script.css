@@ -1,0 +1,461 @@
+/* --------------------------------------------------
+SCRIPTS
+-------------------------------------------------- */
+
+#script .tab cite{
+	display:block;
+	font-style:normal;
+	font-weight:bold;
+	line-height:1.2;
+	margin-bottom:5px;
+	margin-left:72px;
+	position:relative;
+	left:30px;
+}
+
+blockquote p.no-format,
+.no-format blockquote p
+{max-width:100%}
+
+#script .tab time {
+	background:#634100;
+	background:linear-gradient(#775005, #634100);
+	border:1px solid #422000;
+	border-radius:3px;
+	box-shadow:0 0 0 2px #e8a342,0 0 0 3px rgba(0, 0, 0, .5),0 6px 6px -2px rgba(0, 0, 0, .4);
+	box-sizing:border-box;
+	color:#e8a342;
+	cursor:pointer;
+	display:block;
+	font-size:.9em;
+	font-style:normal;
+	padding:2px 5px;
+	position:absolute;
+	right:10px;
+	top:10px;
+	z-index:99999;
+}
+
+#script .tab time:active{top:16px}
+
+.reply1{border-top:0;padding-left:80px}
+
+
+#script .tab article {
+	border-bottom:1px solid rgba(255, 255, 255, .1);
+	clear:both;
+	background:#002084;
+	background:linear-gradient(#1d4ad8,#002084);
+	background-attachment:fixed;
+	border:3px solid #634100;
+	border-radius:3px;
+	box-shadow:0 0 0 2px white,0 0 0 4px #e8a342,0 0 0 8px #634100,0 0 0 9px #000,0 6px 6px 5px rgba(0, 0, 0, .4);
+	box-sizing:border-box;
+	margin:0 auto 30px;
+	padding:10px 0 10px 20px;
+	position:relative;
+	width:400px;
+}
+
+
+
+#script .tab blockquote{
+	display:block;
+	font-family:'Times New Roman';
+	font-size:1.15em;
+	min-height:60px;
+	position:relative;
+	padding-right:90px;
+}
+
+#script .tab blockquote p{
+	line-height:1.3;
+	font-style:italic;
+	margin-left:72px;
+	max-width:12em;
+}
+
+#script .tab blockquote p:last-of-type{
+	margin-bottom:0;
+}
+
+#script .tab blockquote.s2{
+	background:#153fc2;
+	background:linear-gradient(#1d4ad8,#002084);
+	background-attachment:fixed;
+	border:1px solid #634100;
+	border-radius:3px;
+	box-shadow:0 0 0 1px white,0 0 0 2px #e8a342,0 0 0 3px #634100,0 0 0 4px #000,0 6px 6px 1px rgba(0, 0, 0, .4);
+	box-sizing:border-box;
+	font-size:.9em;
+	margin:30px auto;
+	overflow:hidden;
+	overflow-x:hidden;
+	padding:10px 20px;
+	position:absolute;
+	right:-304px;
+	text-align:left;
+	top:-38px;
+	width:268px;
+	z-index:3;
+}
+#script .tab blockquote.s2:hover{
+	background:linear-gradient(#2854db,#0b2e9c);
+	background-attachment:fixed;
+}
+
+#script .tab blockquote:hover{
+	z-index:9999;
+}
+
+#script .tab blockquote.s2 cite,blockquote.s3 cite,blockquote.s2 p,blockquote.s3 p{margin-left:0}
+
+#script .tab .heading
+{
+	background:#634100;
+	background:linear-gradient(#8c5f0a,#634100);
+	border:1px solid #422000;
+	border-radius:3px;
+	box-shadow:0 0 0 2px #e8a342,0 0 0 3px black,0 6px 6px -2px rgba(0, 0, 0, .4);
+	box-sizing:border-box;
+	color:#f3ede4;
+	display:block;
+	font-weight:normal;
+	margin:0 auto 30px;
+	max-width:84%;
+	padding:5px 10px;
+	position:relative;
+	text-align:center;
+}
+#script .tab .heading:hover{z-index:999}
+#script .tab .heading h1,
+#script .tab .heading h2
+{
+	border:0;
+	font-family:'VT323';
+	line-height:1.3;
+	font-size:1.7em;
+	font-weight:normal;
+	line-height:1;
+	margin:0;
+	padding:0;
+	text-transform:uppercase;
+}
+#script .tab .heading p{
+	font-size:1.1em;
+	font-style:italic;
+	margin:0;
+}
+
+#script .tab h4.heading,
+#script .tab h5.heading,h6.heading
+{
+	background-color:rgb(214,204,161);
+	border:1px solid #c9be91;
+	border-radius:5px;
+	box-shadow:0 6px 6px -5px #a68d72;
+	box-sizing:border-box;
+	display:block;
+	margin:0 auto 10px;
+	padding:5px;
+	position:relative;
+	text-align:center;
+}
+
+#script .tab .choice{
+	background:#e8a342;
+	background:linear-gradient(#f4b152, #c9811c);
+	border-right:0px solid #a60000;
+	border-radius:2px;
+	box-shadow:0 0 0 1px rgba(0, 0, 0, .4),0 0 0 3px white,0 0 0 4px black,0 6px 6px -2px rgba(0, 0, 0, .4);
+	box-sizing:border-box;
+	clear:both;
+	display:block;
+	font-family:'VT323';
+	font-size:1.3em;
+	left:-150px;
+	line-height:1.2;
+	margin:0 auto 30px;
+	padding:3px 10px;
+	position:absolute;
+	text-align:right;
+	text-transform:uppercase;
+	width:200px;
+	z-index:9;
+}
+
+#script .tab .show-s2 #show-s2{
+	background:#006121;
+	box-shadow:0 6px 6px -4px rgba(0, 0, 0, .5);
+	font-weight:bold;
+}
+
+/* --------------------------------------------------
+PORTRAITS
+-------------------------------------------------- */
+
+#script .s1.adam:before,
+#script .s1.alef:before,
+#script .s1.amon:before,
+#script .s1.anri:before,
+#script .s1.arthur:before,
+#script .s1.balbaroy:before,
+#script .s1.balbazak:before,
+#script .s1.bleu:before,
+#script .s1.chaos:before,
+#script .s1.colossus:before,
+#script .s1.dark-dragon:before,
+#script .s1.darksol:before,
+#script .s1.diane:before,
+#script .s1.domingo:before,
+#script .s1.earnest:before,
+#script .s1.elliot:before,
+#script .s1.gong:before,
+#script .s1.gort:before,
+#script .s1.guntz:before,
+#script .s1.hans:before,
+#script .s1.hanzou:before,
+#script .s1.jogurt:before,
+#script .s1.kane:before,
+#script .s1.ken:before,
+#script .s1.khris:before,
+#script .s1.king-alterone:before,
+#script .s1.king-prompt:before,
+#script .s1.king-waral:before,
+#script .s1.king-guardiana:before,
+#script .s1.ramladu:before,
+#script .s1.kokichi:before,
+#script .s1.lord-kane:before,
+#script .s1.lowe:before,
+#script .s1.luke:before,
+#script .s1.lyle:before,
+#script .s1.mae:before,
+#script .s1.max:before,
+#script .s1.max-promoted:before,
+#script .s1.mishaela:before,
+#script .s1.musashi:before,
+#script .s1.nova:before,
+#script .s1.otrant:before,
+#script .s1.pelle:before,
+#script .s1.priest:before,
+#script .s1.shell:before,
+#script .s1.tao:before,
+#script .s1.torasu:before,
+#script .s1.vankar:before,
+#script .s1.varios:before,
+#script .s1.zylo:before
+{
+	background:#684800;
+	background-position:left top;
+	background-repeat:none;
+	box-shadow:0 0 0 3px black,0 0 0 4px #684800,0 0 0 5px white,0 0 0 6px #f8b448,0 0 0 7px #684800,0 0 0 8px black;
+	border-radius:1px;
+	content:"";
+	display:block;
+	height:60px;
+	position:absolute;
+	top:5px;
+	width:48px;
+}
+#script .s1.adam:before{background:url(../images/portraits/adam.gif)}
+#script .s1.alef:before{background:url(../images/portraits/alef.gif)}
+#script .s1.amon:before{background:url(../images/portraits/amon.gif)}
+#script .s1.anri:before{background:url(../images/portraits/anri.gif)}
+#script .s1.arthur:before{background:url(../images/portraits/arthur.gif)}
+#script .s1.balbaroy:before{background:url(../images/portraits/balbaroy.gif)}
+#script .s1.balbazak:before{background:url(../images/portraits/balbazak.gif)}
+#script .s1.bleu:before{background:url(../images/portraits/bleu.gif)}
+#script .s1.chaos:before{background:url(../images/portraits/chaos.gif)}
+#script .s1.colossus:before{background:url(../images/portraits/colossus.gif)}
+#script .s1.dark-dragon:before{background:url(../images/portraits/dark-dragon.gif)}
+#script .s1.darksol:before{background:url(../images/portraits/darksol.gif)}
+#script .s1.diane:before{background:url(../images/portraits/diane.gif)}
+#script .s1.domingo:before{background:url(../images/portraits/domingo.gif)}
+#script .s1.earnest:before{background:url(../images/portraits/earnest.gif)}
+#script .s1.elliot:before{background:url(../images/portraits/elliot.gif)}
+#script .s1.gong:before{background:url(../images/portraits/gong.gif)}
+#script .s1.gort:before{background:url(../images/portraits/gort.gif)}
+#script .s1.guntz:before{background:url(../images/portraits/guntz.gif)}
+#script .s1.hans:before{background:url(../images/portraits/hans.gif)}
+#script .s1.hanzou:before{background:url(../images/portraits/hanzou.gif)}
+#script .s1.jogurt:before{background:url(../images/portraits/jogurt.gif)}
+#script .s1.kane:before{background:url(../images/portraits/kane.gif)}
+#script .s1.ken:before{background:url(../images/portraits/ken.gif)}
+#script .s1.khris:before{background:url(../images/portraits/khris.gif)}
+#script .s1.king-alterone:before,
+#script .s1.king-prompt:before,
+#script .s1.king-waral:before
+{background:url(../images/portraits/king.gif)}
+#script .s1.king-guardiana:before{background:url(../images/portraits/king-of-guardiana.gif)}
+#script .s1.ramladu:before{background:url(../images/portraits/ramladu.gif)}
+#script .s1.kokichi:before{background:url(../images/portraits/kokichi.gif)}
+#script .s1.lord-kane:before{background:url(../images/portraits/lord-kane.gif)}
+#script .s1.lowe:before{background:url(../images/portraits/lowe.gif)}
+#script .s1.luke:before{background:url(../images/portraits/luke.gif)}
+#script .s1.lyle:before{background:url(../images/portraits/lyle.gif)}
+#script .s1.mae:before{background:url(../images/portraits/mae.gif)}
+#script .s1.max:before{background:url(../images/portraits/max.gif)}
+#script .s1.max-promoted:before{background:url(../images/portraits/max-promoted.gif)}
+#script .s1.mishaela:before{background:url(../images/portraits/mishaela.gif)}
+#script .s1.musashi:before{background:url(../images/portraits/musashi.gif)}
+#script .s1.nova:before{background:url(../images/portraits/nova.gif)}
+#script .s1.otrant:before{background:url(../images/portraits/otrant.gif)}
+#script .s1.pelle:before{background:url(../images/portraits/pelle.gif)}
+#script .s1.priest:before{background:url(../images/portraits/priest.gif)}
+#script .s1.shell:before{background:url(../images/portraits/shell.gif)}
+#script .s1.tao:before{background:url(../images/portraits/tao.gif)}
+#script .s1.torasu:before{background:url(../images/portraits/torasu.gif)}
+#script .s1.vankar:before{background:url(../images/portraits/vankar.gif)}
+#script .s1.varios:before{background:url(../images/portraits/varios.gif)}
+#script .s1.zylo:before{background:url(../images/portraits/zylo.gif)}
+
+/* --------------------------------------------------
+SPRITES
+-------------------------------------------------- */
+cite:before{
+	background-attachment:no-repeat;
+	content:'';
+	height:24px;
+	left:-30px;
+	overflow:hidden;
+	position:absolute;
+	top:-3px;
+	width:24px;
+	animation: play .8s steps(1) infinite;
+}
+.adam cite:before{background:url(../images/sprites/adam.gif)}
+.alef cite:before{background:url(../images/sprites/alef.gif)}
+.armed-skeleton cite:before{background:url(../images/sprites/armed-skeleton.gif)}
+.lizardman cite:before{background:url(../images/sprites/lizardman.gif)}
+.torasu cite:before{background:url(../images/sprites/torasu.gif)}
+.bleu cite:before{background:url(../images/sprites/bleu.gif)}
+.cat cite:before{background:url(../images/sprites/cat.gif)}
+.chaos cite:before{background:url(../images/sprites/chaos.gif)}
+.colossus cite:before{background:url(../images/sprites/colossus.gif)}
+.centurion cite:before{background:url(../images/sprites/centurion.gif)}
+.dark-dragon cite:before{background:url(../images/sprites/dark-dragon.gif)}
+.dark-dwarf cite:before{background:url(../images/sprites/dark-dwarf.gif)}
+.dark-priest cite:before{background:url(../images/sprites/dark-priest.gif)}
+.diane cite:before{background:url(../images/sprites/diane.gif)}
+.dog cite:before{background:url(../images/sprites/dog.gif)}
+.elliot cite:before{background:url(../images/sprites/elliot.gif)}
+.gong cite:before{background:url(../images/sprites/gong.gif)}
+.jogurt cite:before{background:url(../images/sprites/jogurt.gif)}
+.lyle cite:before{background:url(../images/sprites/lyle.gif)}
+.pelle cite:before{background:url(../images/sprites/pelle.gif)}
+.kokichi cite:before{background:url(../images/sprites/kokichi.gif)}
+.ramladu cite:before{background:url(../images/sprites/ramladu.gif)}
+.silver-knight cite:before{background:url(../images/sprites/silver-knight.gif)}
+.injured-soldier cite:before{background:url(../images/sprites/injured-soldier.gif)}
+.soldier cite:before{background:url(../images/sprites/soldier.gif)}
+.woman cite:before{background:url(../images/sprites/woman.gif)}
+.zylo cite:before{background:url(../images/sprites/zylo.gif)}
+.master-mage cite:before{background:url(../images/sprites/master-mage.gif)}
+.old-man cite:before{background:url(../images/sprites/old-man.gif)}
+.old-woman cite:before{background:url(../images/sprites/old-woman.gif)}
+.maid cite:before{background:url(../images/sprites/maid.gif)}
+.mage cite:before{background:url(../images/sprites/mage.gif)}
+.merchant cite:before{background:url(../images/sprites/merchant.gif)}
+.vankar cite:before{background:url(../images/sprites/vankar.gif)}
+.karin cite:before,
+.krin cite:before,
+.queen-koron cite:before
+	{background:url(../images/sprites/karin.gif)}
+.max cite:before,
+.actor-max cite:before
+	{background:url(../images/sprites/max.gif)}
+.max-promoted cite:before{background:url(../images/sprites/max-promoted.gif)}
+.shell cite:before,
+.mermaid cite:before
+	{background:url(../images/sprites/shell.gif)}
+
+.darksol cite:before{background:url(../images/sprites/darksol.gif)}
+.balbazak cite:before{background:url(../images/sprites/balbazak.gif)}
+.domingo cite:before{background:url(../images/sprites/domingo.gif)}
+.brit cite:before,
+.cerberus cite:before
+	{background:url(../images/sprites/cerberus.gif)}
+.demon-master cite:before{background:url(../images/sprites/demon-master.gif)}
+.hanzou cite:before{background:url(../images/sprites/hanzou.gif)}
+.musashi cite:before{background:url(../images/sprites/musashi.gif)}
+.pig cite:before{background:url(../images/sprites/pig.gif)}
+.earnest cite:before{background:url(../images/sprites/earnest.gif)}
+.laser-eye cite:before{background:url(../images/sprites/laser-eye.gif)}
+.zombie cite:before{background:url(../images/sprites/zombie.gif)}
+.amon cite:before{background:url(../images/sprites/amon.gif)}
+.balbaroy cite:before{background:url(../images/sprites/balbaroy.gif)}
+.marionette cite:before{background:url(../images/sprites/marionette.gif)}
+.spirit cite:before{background:url(../images/sprites/spirit.gif)}
+.skeleton cite:before{background:url(../images/sprites/skeleton.gif)}
+.sign-post cite:before{background:url(../images/sprites/sign-post.gif)}
+.mahato cite:before,
+.otrant cite:before,
+.vip-mage cite:before
+	{background:url(../images/sprites/otrant.gif)}
+.anri cite:before{background:url(../images/sprites/anri.gif)}
+.paladin cite:before{background:url(../images/sprites/arthur-promoted.gif)}
+.arthur cite:before,
+.knight cite:before
+	{background:url(../images/sprites/arthur.gif)}
+.elder cite:before,
+.mayor cite:before
+	{background:url(../images/sprites/elder.gif)}
+.guntz cite:before{background:url(../images/sprites/guntz.gif)}
+.boken cite:before{background:url(../images/sprites/boken.gif)}
+.rune-knight cite:before,
+.actor-rune-knight cite:before
+	{background:url(../images/sprites/rune-knight.gif)}
+.priest cite:before{background:url(../images/sprites/priest.gif)}
+.fisherman cite:before{background:url(../images/sprites/fisherman.gif)}
+.khris cite:before{background:url(../images/sprites/khris.gif)}
+.mishaela cite:before{background:url(../images/sprites/mishaela.gif)}
+.gort cite:before{background:url(../images/sprites/gort.gif)}
+.kane cite:before,
+.lord-kane cite:before
+	{background:url(../images/sprites/kane.gif)}
+.narrator cite:before,
+.simone cite:before
+	{background:url(../images/sprites/simone.gif)}
+.chicken cite:before,
+.hen cite:before
+	{background:url(../images/sprites/chicken.gif)}
+.old-gert cite:before,
+.wizardess cite:before
+	{background:url(../images/sprites/wizardess.gif)}
+.evil-max cite:before{background:url(../images/sprites/max-promoted.gif)}
+.mae cite:before{background:url(../images/sprites/mae.gif)}
+.lowe cite:before{background:url(../images/sprites/lowe.gif)}
+.hans cite:before{background:url(../images/sprites/hans.gif)}
+.tao cite:before{background:url(../images/sprites/tao.gif)}
+.ken cite:before{background:url(../images/sprites/ken.gif)}
+.luke cite:before{background:url(../images/sprites/luke.gif)}
+.minister cite:before{background:url(../images/sprites/minister.gif)}
+.farmer cite:before{background:url(../images/sprites/farmer.gif)}
+.king cite:before,
+.king-alterone cite:before,
+.king-guardiana cite:before,
+.king-kusuko cite:before,
+.king-waral cite:before
+	{background:url(../images/sprites/king.gif)}
+.nova cite:before{background:url(../images/sprites/nova.gif)}
+.lady cite:before{background:url(../images/sprites/lady.gif)}
+.varios cite:before{background:url(../images/sprites/varios.gif)}
+.man cite:before{background:url(../images/sprites/man.gif)}
+.young-man cite:before{background:url(../images/sprites/young-man.gif)}
+.boy cite:before{background:url(../images/sprites/boy.gif)}
+.girl cite:before{background:url(../images/sprites/girl.gif)}
+.princess cite:before{background:url(../images/sprites/princess.gif)}
+.audience cite:before{background:url(../images/sprites/audience.gif)}
+.durahan cite:before{background:url(../images/sprites/durahan.gif)}
+.nun cite:before{background:url(../images/sprites/nun.gif)}
+.dragonia-shrine cite:before{background:url(../images/sprites/dragonia-shrine.gif)}
+.statue cite:before{background:url(../images/sprites/statue.gif);height:34px;}
+.prompt-man cite:before,
+.waral-man cite:before
+	{background:url(../images/sprites/waral-man.gif)}
+
+@keyframes play {
+	0%   {background-position:0 0}
+    50%  {background-position:-24px 0}
+    100%   {background-position:0 0}
+}

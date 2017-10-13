@@ -1,0 +1,1 @@
+<?php require('force.php'); ?>
